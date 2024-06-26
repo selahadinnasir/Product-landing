@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;  /* Sets the font for the document */
+    margin: 0;                      /* Removes default margin */
+    padding: 0;                     /* Removes default padding */
+    color: #333;                    /* Sets the text color */
+    background-color: #eee;      /* Sets the background color */
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;                 /* Adds padding inside the header */  
+    margin-top: 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+@media (max-width: 600px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #333;
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      right: 20px;
+      width: 150px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .nav.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+.logo img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header nav ul {
+    list-style: none;               /* Removes the default list styling */
+    padding: 0;                     /* Removes default padding */
+    display: flex;                  /* Uses flexbox to align list items horizontally */
+}
+
+header nav ul li {
+    margin-left: 30px;              /* Adds space between the list items */
+    margin-right: 20px;
+    font-size: small;
+    font-weight: bold; 
+}
+
+
+header nav ul li a {
+    text-decoration: none;          /* Removes the underline from links */
+    color: #333;                    /* Sets the text color of links */
+}
+
+/* Styles for the hero section */
+.hero  {
+    text-align: center; 
+    
+}
+
+.hero h1 {
+    font-size: 26px;                /* Sets the font size for the main heading */
+    margin-bottom: 10px;            /* Adds space below the heading */
+}
+
+
+.hero input[type="email"] {
+    padding: 10px;                  /* Adds padding inside the input */
+    font-size: 16px;                /* Sets the font size of the input text */
+    border: 1px solid #ddd;         /* Adds a border around the input */
+    margin-bottom: 10px;
+    border-radius: 5px;             /* Rounds the corners of the input */
+}
+
+.hero form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.hero button {
+    padding: 10px 20px;             /* Adds padding inside the button */
+    font-size: 16px;                /* Sets the font size of the button text */
+    font-weight: bolder;
+    background-color: #f4c20d;      /* Sets the background color of the button */
+    border: none;                   /* Removes the default border */
+    border-radius: 5px;             /* Rounds the corners of the button */
+    cursor: pointer;                /* Changes the cursor to pointer on hover */
+    margin-left: 10px;              /* Adds space to the left of the button */
+}
+
+
+
+.features {
+    display: flex;
+    flex-direction: column;         /* Stack features vertically */
+    align-items: center;            /* Center the items */
+    padding: 50px 20px;
+}
+
+.feature {
+    display: flex;                  /* Use flexbox for inner layout */
+    align-items: center;            /* Align items vertically */
+    max-width: 800px;               /* Set a max-width for each feature */
+    margin-bottom: 30px;            /* Add space between features */
+}
+
+.feature i {
+    margin-right: 20px;             /* Add margin to separate icon from text */
+    color: darkorange;                 /* Set icon color */
+    flex-shrink: 0;                 /* Prevent icons from shrinking */
+    line-height: 1;                 /* Normalize line height */
+    padding: 5px;                   /* Add padding if necessary */
+    width: 50px;
+    height: 50px;
+}
+
+.feature-content {
+    flex-grow: 1;                   /* Allows content to expand and fill remaining space */
+}
+
+.feature-content h1 {
+    font-size: 24px;
+    margin: 0;                      /* Remove default margin */
+}
+
+.feature-content p {
+    font-size: 16px;
+    margin: 5px 0 0 0;              /* Add a little space at the top */
+}
+
+video {
+    width: 100%;
+} 
+
+.prices {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 0;
+  max-width: 79%;
+  gap: 20px; /* Adjust the gap between the items as needed */
+  padding: 20px; /* Adjust the padding around the section as needed */
+  box-sizing: border-box;
+}
+
+.price {
+    text-align: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 100%; /* Full width for small screens */
+    max-width: 306px; 
+}
+
+.price .title {
+    width: 100%; /* Ensures the title takes up the full width */
+    font-weight:700; /* Makes the font bold */
+    background-color: #ddd; /* Sets the background color */
+    padding: 5px 10px; /* Optional: Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.price h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.price p {
+    line-height: 2;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.price button {
+        padding: 10px 40px;             /* Adds padding inside the button */
+        font-size: 16px;                /* Sets the font size of the button text */
+        background-color: #f4c20d;      /* Sets the background color of the button */
+        border: none;                   /* Removes the default border */
+        border-radius: 5px;             /* Rounds the corners of the button */
+        cursor: pointer;                /* Changes the cursor to pointer on hover */            
+        margin-top: 15px;  
+        margin-bottom: 10px; 
+    }
+
+
+.footer {
+    background-color: #ddd;
+    /* margin:15px 130px 0; */
+    margin: 15px auto 0; /* Centered horizontally with auto margins */
+    width: 77%; /* Responsive width */
+}
+
+.footer ul {
+    display: flex;
+    justify-content: end;
+    padding: 15px 15px 0;
+    list-style: none;        
+
+}
+
+.footer ul li {
+    margin-left: 30px;              /* Adds space between the list items */
+    margin-right: 20px;
+    font-size: small;
+    font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+
+ .footer ul li {
+      margin: 10px 10px; /* Reduce margin for smaller screens */
+      text-align: center; /* Center text */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+    }
+
+    .footer ul li {
+      margin: 5px 0; /* Further reduce margin for very small screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .price {
+      flex: 1 1 45%; /* Two items per row for medium screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .price {
+      flex: 1 1 100%; /* One item per row for small screens */
+    }
+  }
+
+.footer p {
+    display: flex;
+    justify-content: end;
+    padding: 0 15px 15px;
+    color:#444;
+    font-size: 0.9em;
+}
+
+
+    
